@@ -1,0 +1,100 @@
+.takeaway {
+  margin-top: 10px;
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+
+
+    .cart {
+      button {
+        background: red;
+        color: white;
+
+        &:hover {
+          padding: 7px 20px;
+          background: red;
+        }
+      }
+    }
+
+    button {
+      padding: 7px 15px;
+      border: none;
+      border-radius: 20px;
+      margin-top: 20px;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(113, 150, 113);
+        color: white;
+      }
+    }
+  }
+
+  .deliver {
+    display: flex;
+    justify-content: space-between;
+
+    .deliver-btn {
+      width: 30%;
+      padding: 5px 10px;
+      background: rgba(185, 185, 185, 0.459);
+      border-radius: 20px;
+      display: flex;
+
+      button {
+        width: 50%;
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: none;
+        background: none;
+        transition: 0.5s ease;
+        color: #828282;
+        cursor: pointer;
+
+        &:hover {
+          background: #fff;
+        }
+      }
+    }
+
+    .destination {
+      width: 50%;
+      background-color: rgba(241, 231, 173, 0.438);
+      border: 1px solid rgb(212, 181, 0);
+      font-size: 15px;
+      color: gold;
+      height: 40px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+  }
+  @media(max-width: 900px){
+    .deliver{
+      .destination{
+        width: 30%;
+      }
+    }
+  }
+  @media(max-width: 600px){
+    .deliver{
+      justify-content: center;
+      .deliver-btn{
+        width: 100%;
+      }
+      .destination{
+        display: none;
+      }
+    }
+  
+  }
+}
+
+

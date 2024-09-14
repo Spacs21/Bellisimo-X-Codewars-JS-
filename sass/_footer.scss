@@ -1,0 +1,108 @@
+.footer {
+  background-color: #2b2b2b;
+  padding: 20px 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 13px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    &__contact {
+      font-weight: 500;
+    }
+  }
+
+  &__center {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: 400;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__payment {
+      display: flex;
+      gap: 15px;
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  &__right {
+    text-align: right;
+
+    &__follow {
+      font-weight: 500;
+    }
+
+    &__social {
+      display: flex;
+      gap: 15px;
+
+      a img {
+        width: 24px;
+        height: auto;
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__right {
+      text-align: center;
+    }
+  }
+}

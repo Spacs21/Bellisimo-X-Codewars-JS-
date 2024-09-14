@@ -1,0 +1,16 @@
+.banner {
+    background-image: url('assets/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    .banner-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner__left{
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
